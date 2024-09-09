@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="flex">
+        <!-- sidebar -->
+         <div class="hidden sm:block relative bg-neutral-100 h-screen w-[260px] px-4 py-3">
+            <div class="flex justify-between">
+                <img src="./assets/sidebar-icon.svg" alt="">
+                <img src="./assets/new chat-icon.svg" alt="">
+            </div>
+            <div class="flex gap-3 items-center mt-6 py-2 px-1 hover:bg-neutral-200 hover:cursor-pointer rounded-lg">
+                <img src="./assets/gpt-logo.svg" class="h-7 p-1 border-neutral-200 border-2 rounded-full bg-white" alt="">
+                <p class="text-sm tracking-tight">ChatGPT</p>
+            </div>
+            <div class="flex gap-3 items-center py-2 px-1 hover:bg-neutral-200 hover:cursor-pointer rounded-lg">
+                <img src="./assets/explore-icon.svg" class="h-7 p-1" alt="">
+                <p class="text-sm tracking-tight">Explore GPTs</p>
+            </div>
+            <div>
+                <p class="text-xs font-semibold mt-10 mb-2 px-2 ">Today</p>
+            </div>
+            <div class="text-neutral-800 p-2 hover:bg-neutral-200 hover:cursor-pointer rounded-lg">New chat</div>
+            <div class="text-neutral-800 p-2 hover:bg-neutral-200 hover:cursor-pointer rounded-lg">How to use tailwind</div>
+            <div class="text-neutral-800 p-2 hover:bg-neutral-200 hover:cursor-pointer rounded-lg">How to make responsive</div>
+            <div class="text-neutral-800 p-2 hover:bg-neutral-200 hover:cursor-pointer rounded-lg"></div>
+
+            <!-- sidebar bottom -->
+            <div class="absolute bottom-2 w-[calc(100%-32px)]">
+                <div class="text-neutral-800 p-2 flex gap-3 items-center hover:bg-neutral-200 hover:cursor-pointer rounded-lg">
+                    <div class="p-1 border rounded-full ">
+                        <img src="./assets/plan-icon.svg" class="h-4" alt="">
+                    </div>
+                    <div>
+                        <p>Upgrade Plan</p>
+                        <p class="text-xs text-neutral-400">Get GPT-4, DALL·E, and more</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+        <!-- main content -->
+         <div class="h-screen w-[90%] mx-auto sm:mx-0 sm:w-[calc(100%-270px)] relative">
+            <div>
+                <div class="flex gap-1 mt-2 ml-4 px-2 py-2 text-lg font-semibold text-neutral-500 w-28 rounded-lg hover:bg-neutral-50 hover:cursor-pointer ">
+                    <p>ChatGPT</p>
+                <img src="./assets/downarrow-icon.svg" alt="">
+                </div>
+            </div>
+            <div class=" absolute right-3 top-3">
+                <p class="rounded-full p-2 text-white bg-zinc-400 inline text-xs">SH</p>
+            </div>
+            <div class="w-[690px] mx-auto absolute  bottom-7 left-1/2 -translate-x-1/2">
+                <!-- <div class="sm:w-[90%]  w-full mx-auto absolute bottom-5 left-1/2 -translate-x-1/2 "> -->
+                <div>
+                    <img src="./assets/gpt-logo.svg" class="mx-auto h-12 " alt="">
+                </div>
+                <div class="flex gap-4 mt-12">
+                    <div class="border border-gray-200 w-40 px-4 py-3 rounded-xl shadow-sm hover:bg-neutral-50 hover:cursor-pointer">
+                        <img src="./assets/study-icon.svg" class="h-4" alt="">
+                        <p class="mt-1 text-gray-500">What can ChatGPT do</p>
+                    </div>
+                    <div class="border border-gray-200 w-40 px-3 py-4 rounded-xl shadow-sm  hover:bg-neutral-50 hover:cursor-pointer">
+                        <img src="./assets/webpage-icon.svg" class="h-4" alt="">
+                        <p class="mt-1 text-gray-500">Make me a personal webpage</p>
+                    </div>
+                    <div class="border border-gray-200 w-40 px-3 py-4 rounded-xl shadow-sm hover:bg-neutral-50 hover:cursor-pointer">
+                        <img src="./assets/create-icon.svg" class="h-4" alt="">
+                        <p class="mt-1 text-gray-500">Create a Renaissance-style painting</p>
+                    </div>
+                    <div class="border border-gray-200 w-40 px-3 py-4 rounded-xl shadow-sm hover:bg-neutral-50 hover:cursor-pointer">
+                        <img src="./assets/write-icon.svg" class="h-4" alt="">
+                        <p class="mt-1 text-gray-500">Message to comfort a friend</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" placeholder="Message ChatGPT" class="w-full px-5 py-3 rounded-full mt-32 bg-neutral-100 focus:outline-none">
+                    <p class="text-xs text-neutral-500 mt-2 text-center">ChatGPT can make mistakes. Check important info.</p>
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
